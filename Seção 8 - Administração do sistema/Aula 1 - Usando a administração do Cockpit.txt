@@ -1,0 +1,17 @@
+// Aula 1 - Usando a administração do Cockpit
+
+https://cockpit-project.org/
+
+https://cockpit-project.org/running.html
+
+https://host1.example.com:9090/
+https://192.168.122.114:9090/
+
+Se for IPv6, coloca o endereço entre colchetes: 
+
+https://[...]:9090
+
+
+
+
+

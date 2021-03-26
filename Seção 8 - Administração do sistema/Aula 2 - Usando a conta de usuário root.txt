@@ -1,0 +1,37 @@
+// Aula 2 - Usando a conta de usuário root
+
+$ su
+
+$ su -
+
+su - mz2
+
+# /usr/sbin/visudo
+
+# /usr/sbin/visudo
+
+mz2 ALL=(ALL) ALL
+
+mz2 ALL=(ALL) NOPASSWD: ALL
+
+$ sudo touch /mnt/testfile.txt
+
+$ ls -l /mnt/testfile.txt
+
+$ rm /mnt/testfile.txt
+
+$ sudo rm /mnt/textfile.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+

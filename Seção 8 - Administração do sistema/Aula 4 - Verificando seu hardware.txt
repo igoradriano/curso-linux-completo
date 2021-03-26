@@ -1,0 +1,57 @@
+// Aula 4 - Verificando seu hardware
+
+$ dmesg | less
+
+# dmesg | less | grep RAM
+
+# dmesg | less | grep VGA
+
+$ lspci
+
+# lspci | grep VGA
+
+$ lsusb
+
+$ lscpu
+
+# lsmod
+
+# /sbin/modinfo -d e1000
+
+# modprobe parport
+
+# modprobe parport_pc io=0x3bc irq=auto
+
+# rmmod parport_pc
+
+# rmmod usbcore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
