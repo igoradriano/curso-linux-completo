@@ -1,0 +1,13 @@
+// Aula 6 - Trabalhando com o aptitude
+
+# apt-get install aptitude
+
+# aptitude
+
+
+
+
+
+
+
+

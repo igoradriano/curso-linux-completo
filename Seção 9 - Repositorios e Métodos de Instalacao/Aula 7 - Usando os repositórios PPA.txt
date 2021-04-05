@@ -1,0 +1,76 @@
+// Aula 7 - Usando os repositórios PPA
+
+https://launchpad.net/ubuntu/+ppas
+
+Vamos usar a PPA do Java da Oracle:
+
+sudo add-apt-repository ppa:linuxuprising/java
+
+sudo apt-get update
+
+sudo apt install oracle-java14-installer
+
+Vamos ver se realmente estamos com o Java?
+
+# java --version
+
+https://launchpad.net/~linuxuprising/+archive/ubuntu/java
+
+# apt policy
+
+sudo add-apt-repository --remove ppa:linuxuprising/java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

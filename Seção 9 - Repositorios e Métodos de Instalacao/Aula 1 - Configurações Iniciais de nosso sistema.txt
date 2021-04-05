@@ -1,0 +1,79 @@
+// Aula 1 - Configurações Iniciais de nosso sistema
+
+export LANG=""
+
+# date
+
+e depois:
+
+# export LANG="en_US"
+
+# date
+
+# export LANG="pt_BR"
+
+# dpkg-reconfigure tzdata
+
+# dpkg-reconfigure locales
+
+apt-get install console-data
+
+dpkg-reconfigure console-data
+
+dpkg-reconfigure console-setup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

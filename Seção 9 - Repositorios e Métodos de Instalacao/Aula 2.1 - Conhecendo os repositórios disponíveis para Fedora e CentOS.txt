@@ -1,0 +1,64 @@
+// Aula 1 - Conhecendo os repositórios disponíveis
+
+https://rpmfusion.org/
+
+# yum localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm 
+
+#yum localinstall --nogpgcheck https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+
+EPEL:
+
+https://fedoraproject.org/wiki/EPEL/pt-br
+
+# cd /etc/yum.repos.d/
+
+# less /etc/yum.repos.d/Centos-Base.repo
+
+# yum install kernel
+
+# yum repolist
+
+# wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+# rpm -ivh epel-release-latest-8.noarch.rpm
+
+# yum update
+
+# yum repolist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+// Aula 2 - Trabalhando com YUM
+
+# yum search
+
+# yum info
+
+# yum install
+
+# yum remove
+
+# yum list all 
+
+# yum group list
+
+# yum group install
+
+# yum update - atualizar todos os seus repositórios
+
+# yum clean all  - limpar todo o cache de seus pacotes
+
+# yum history
+
+# yum repolist
+
+# yum search xeyes
+
+# yum provides */xeyes - O comando mostra que o pacote xorg-x11-apps- <version> contém esse arquivo.
+
+# yum install -y xorg-x11-apps
+
+# yum list xorg-x11-apps  - Você vê que o pacote está listado como instalado
+
+# yum history
+
+# yum history undo <nn>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+// Aula 3 - Trabalhando com RPM
+
+# rpm -qR - Lista todas as dependencias necessárias para o seu pacote
+
+# rpm -Va - Verifica todos os pacotes instalados, bem como a sua integrinidade e a versão que está usando
+
+# rpm -qa - Lista todos os pacotes instalados no seu sistema
+
+# which dnsmasq
+
+# rpm -qf $(which dnsmasq)
+
+# rpm -qi dnsmasq
+
+# rpm -ql dnsmasq
+
+# rpm -qc dnsmasq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

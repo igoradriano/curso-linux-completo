@@ -1,0 +1,100 @@
+// Aula 3 - Compilação de Programas.txt
+
+# configure
+
+# makefile
+
+# apt-get install make gcc g++ bzip2 gzip unzip
+
+https://nmap.org/dist/
+
+# wget https://nmap.org/dist/nmap-7.70.tar.bz2
+
+# tar xvjf nmap-7.70.tar.bz2
+
+# cat README.md
+
+# cat INSTALL
+
+# ./configure --help
+
+# ./configure --without-zenmap
+
+# cat Makefile.in
+
+# make
+
+# make install
+
+# nmap localhost
+
+# make uninstall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

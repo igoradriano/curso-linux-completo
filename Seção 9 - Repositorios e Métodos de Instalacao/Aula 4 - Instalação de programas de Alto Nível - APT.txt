@@ -1,0 +1,43 @@
+//Aula 2 - Instalação de programas de Alto Nível - APT.txt
+
+# apt-get update
+
+# apt install emacs
+
+# apt install aptitude
+
+# aptitude update
+
+# aptitude install vim
+
+# apt remove vim
+
+# apt purge vim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+// Aula 6 - Trabalhando com DNF
+
+https://fedoraproject.org/wiki/DNF
+
+https://github.com/rpm-software-management/dnf
+
+# yum install dnf
+
+# dnf search audacity 
+
+# dnf install audacity 
+
+# dnf remove audacity 
+
+# dnf help
+
+# dnf list
+
+# dnf list installed
+
+# dnf list available
+
+# dnf check-update
+
+# dnf list updates
+
+# dnf update bash
+
+# dnf update
+
+# dnf upgrade
+
+# dnf distro-sync
+
+# dnf download vim
+
+# dnf downgrade vim
+
+# dnf groupinstall 'Development Tools'
+
+# dnf groupupdate 'Development Tools'
+
+# dnf groupremove 'Development Tools'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
