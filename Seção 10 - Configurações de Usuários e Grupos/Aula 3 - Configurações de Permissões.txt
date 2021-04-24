@@ -1,0 +1,84 @@
+// Aula 6 - Configurações de Permissões
+
+
+Para obter acesso aos arquivos ou diretórios no Linux, as permissões são fundamentais para que sejam corretamente feitas. 
+
+Essas permissões são atribuídas a três entidades: o proprietário do arquivo, o proprietário do grupo e a outra entidade (que é todo mundo).
+
+
+Antes de discutir permissões, você deve saber sobre a função de propriedade de arquivos e diretórios. 
+
+A propriedade de arquivos e diretórios é vital para trabalhar com permissões. 
+
+Vamos ver pro exemplo as permissões abaixo:
+
+# ls -l
+
+Podemos ver também, quais diretórios e arquivos um usuário comum tem:
+
+# find / -user vitor                 - verifica todos os diretorios e arquivos que esse usuario tem permissao
+
+
+# find / -group users            -mesma coisa para grupos
+
+Para mudar as permissões, usamos o comando chown
+
+# chown -R vitor /home/vitor    - victor tem permissao para diretorio /home/vitor
+
+E para alterar com mais detalhes, temos a numeração deles:
+
+Read    4
+Write   2
+Execute 1
+
+# chmod 750 /arquivo     -  usuario(rwx) grupos(r-x) outros(---)
+
+Para deixar ele executavél:
+
+# chmod +x arquivo.sh
+
+Para todo o diretório e seus arquivos:
+
+# chmod -R o+rx /data
+-----------------------------------------------------------------------------------------------------------------------
+Vamos ao nosso exemplo prático:
+
+# mkdir -p /data/vendas  /data/contas            -criando diretorios
+
+# chown vitor.vendas /data/vendas            -permissao para vitor do grupo vendas
+
+# chown bob.contas /data/contas             - permissao para bob do grupo contas
+
+# chmod 770 /data/vendas
+
+# chmod 770 /data/contas
+
+# su - vitor
+
+$ touch vazio                -criando arquivo
+
+$ cd /data/vendas            -posso criar arquivos fora do /home dentro do data/vendas
+
+$ touch vazio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

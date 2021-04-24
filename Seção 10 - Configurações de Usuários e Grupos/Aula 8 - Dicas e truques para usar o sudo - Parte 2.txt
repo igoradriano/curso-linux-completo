@@ -1,0 +1,69 @@
+// Aula 8 - Dicas e truques para usar o sudo - Parte 2
+
+entramos como usuario root
+
+nano /ect/sudoers
+
+vitor ALL=(ALL) /usr/bin/systemctl status sshd, /usr/bin/systemctl restart sshd  -modificamos o arquivo navamente
+
+Primeiro vamos criar um arquivo chamado 'nano script.sh'. Dentro do arquivo colocaremos:
+#! /bin/bash
+echo "Este script pertence a esse usuário, grato!"
+
+$ chmod +x script.sh         --deixando o arquivo executavel
+
+./script.sh              -- executando arquivo
+
+exit                 -- saindo da execucao
+
+$ sudo /home/vitor/script.sh  
+
+[sudo] password for vitor: 
+Sorry, user vitor is not allowed to execute 'script.sh' as root on ubuntu.     -nao vai deixar pois o arquivo é root
+
+vitor  ALL=(ALL) /home/vitor/script.sh        -- la no /etc/sudoers podemos colocar o caminho do arquivo e conceder o acess apenas ao victor 
+
+$ sudo /home/vitor/script.sh     --agora vai executar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

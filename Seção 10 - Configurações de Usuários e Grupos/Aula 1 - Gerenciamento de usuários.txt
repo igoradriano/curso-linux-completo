@@ -1,0 +1,102 @@
+// Aula 4 - Gerenciamento de usuários
+
+# id vitor
+
+# su
+
+# sudo
+
+# whoami
+
+# id
+
+# su
+
+# visudo  - mostra os grupos do linux
+
+# usermod -G wheel vitor  - adiciona vitor ao grupo wheel que da poderes de root
+
+# id vitor
+
+# passwd vitor  - mudar  a senha
+
+# sudo useradd lori - cria o usuário lori
+
+# tail -n 10 /etc/shadow    -visualizar as senhas no formato hash de todos os usuários
+
+# tail -n 10 /etc/passwd       - mostra o grupo, se tem barra home, e qual o interpretador do shell (/bin/bash)
+
+# cat /etc/default/useradd     - arquivos padrão do usuário atual
+
+# less /etc/login.defs             - política de senhas de todos os usuários do linux
+
+# chage -l vitor                      - verifica a senha do usuário victo, quando foi usada pela ultima vez, quando expira, numero minimo de dias de troca de senha
+
+# passwd -n 30 -w 3 -x 90 vitor    -  para criar regra de senhas  -30 dias minimo entre troca de senhas  -3 dias para avisar -x 90 dias numero macimo de dias de troca de senha
+
+# chage -l vitor
+
+■ /etc/profile: 
+
+■ /etc/bashrc: 
+
+■ ~ /.profile:
+
+■ ~ /.bashrc:                            - alias  e outros tipos de configuracoes para ser usado no usuario atual
+
+--------------------------------------------------------------------------------- PARTE 2---------------------------------------------------------------------------------
+# vim /etc/login.defs     - alterar alguns parametros, como o create home YES e o userroups_enab NO
+
+# cd /etc/skel             -   onde temos o diretório para todos os usuarios comuns
+
+# mkdir Imagens       - criamos um diretório dentro do skel
+
+# mkdir Documentos        - criamos outro diretório dentro do skel
+
+export EDITOR=/usr/bin/vim      - todos os arquivos de texto padrao 
+
+# useradd teste                   - adicionar login e senha padrao
+
+# id teste
+
+# passwd teste
+
+# passwd -n 30 -w 3 -x 90 teste
+
+# chage -l teste
+
+# for i in teste lori bob; do useradd $i; done                -verifica se o esses users foram criados
+
+# grep lori /etc/passwd /etc/shadow /etc/group      -  verificar se ja existem esses diretorios
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

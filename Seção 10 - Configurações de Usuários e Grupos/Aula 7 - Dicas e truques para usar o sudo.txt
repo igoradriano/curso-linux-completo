@@ -1,0 +1,46 @@
+// Aula 7 - Dicas e truques avançados para usar o sudo
+
+sudo -k
+
+# vim /etc/sudoers                                         -- arquivo para configurar o sudo
+
+Defaults timestamp_timeout = 0                   -- neste caso timeout = 0 ele sempre irá pedir a senha
+# caso nao queira essa config, podemos comentar esta linha de comando
+
+$ sudo systemctl restart sshd                   -- restart no sistema, quando formos executar novamente depois de 5 min, nao precisa chamar ou pedir novamente a senha
+
+sudo -l                             -- conseguimos visualizar algumas inf. sobre o que podemos fazer nas entradas
+
+mz2 ALL=(ALL) /usr/bin/systemctl                -- vamos no vim/etc/sudoers e colocamos este código abaixo 
+de root ALL=(ALL:ALL) ALL. OBS é nesta parte tambem que colocamos os usuários com poderes de root 
+ex: igor ALL=(ALL:ALL) ALL, caso o usuário que queremos deixar com poderes do systemtcl seja o igor, 
+devemos apagar a linha que onsede podere de root 
+
+mz2 ALL=(ALL) /usr/bin/systemctl * sshd   -- caso quisessemos que o systemctl controlasse apenas servicos de ssh para o usuario mz2
+# Nao podemos restartar outros tipos de configuracoes, apenas o sshd:  sudo sustemctl restart sshd
+#Podemos fazer qualquer coisa atraves do systemctl como os servicos sshd
+
+mz2 ALL=(ALL) /usr/bin/systemctl status sshd, /usr/bin/systemctl restart sshd   --  podemos usar apenas o comando status e testart do systemctl para os servicos ssh atraves do usuario mz2
+
+$ sudo vim /etc/sudoers
+
+$ sudo systemctl restart sshd
+
+$ sudo systemctl status sshd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

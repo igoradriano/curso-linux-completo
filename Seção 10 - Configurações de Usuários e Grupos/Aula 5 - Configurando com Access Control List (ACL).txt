@@ -1,0 +1,40 @@
+// Aula 5 - Configurando com Access Control List (ACL)
+
+setfacl -m u:username:rwx filename  
+
+# dnf -y install acl  - (RHEL/CenOS)              - instalacao do pacote
+
+$ sudo apt install acl - (Debian/Ubuntu)           - instalacao do pacote
+
+$ touch /tmp/memo.txt           - arquivo temporario
+$ ls -l /tmp/memo.txt              - para vizualizarmos
+$ setfacl -m u:vitor:rw /tmp/memo.txt            - - permissão para um usuario específico
+$ setfacl -m g:users:rw /tmp/memo.txt       -- permissao para um grupo específico
+
+$ ls -l /tmp/memo.txt                  --sinal de + indica que as acls estao definidas
+
+$ getfacl -p /tmp/memo.txt          --para visuzaliza-las as acls
+
+$ chmod 644 /tmp/memo.txt
+$ getfacl -p /tmp/memo.txt
+
+$ mkdir /tmp/mz2
+$ setfacl -m d:g:vitor:rwx /tmp/mz2/       --permissao para o grupo victor da pasta tmp/mz2 com configs para pastas e arquivos internos tbm
+$ getfacl -p /tmp/mz2/                             --visuzalizar as permissoes dadas acima
+
+$ mkdir /tmp/mz2/test              -- criamos um diretorio dentro de mz2 
+$ getfacl -p /tmp/mz2/test         --verificados se as permissoes de mz2 passaram para o diretorio test
+
+$ touch /tmp/mz2/file.txt           --criamos um arquivo dentro de mz2
+$ getfacl -p /tmp/mz2/file.txt     --verificamos que ele herda as permissoes de mz2 tbm porem nao herda a execucao do arquivo 'x'
+
+
+
+
+
+
+
+
+
+
+

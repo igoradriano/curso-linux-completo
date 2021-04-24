@@ -1,0 +1,14 @@
+# ls -la
+# chgrp [nome do grupo] [nome do arquivo]   - muda a permissao do arquivo para esse grupo passado
+
+#chgrp [nome grupo] -v [nome arquivo1] [nome arquivo2]  ->mostra uma mensagem que esses arquivos foram alterados
+podemos utilizar o gid do nosso grupo no lugar do grupo
+
+# chgrp -R [nome do grupo] [nome pasta/arquivo]   -> -R de recurssivo, altera não somente as permissões da pasta raíz como dos arquivos internos a esta pasta.
+
+Pesquisar detalhes do usuarios e grupos do linux - getent
+-------------------------------------------------
+# getent passwd [nome do grupo/usuario] 
+-> tras o nome do usuario:x:id:gid:, , ,: diretorio(/home/usuario:tipode shell//bin/bash)
+
+#  getent group  --> mostra todos o gid`s do sistema linux
