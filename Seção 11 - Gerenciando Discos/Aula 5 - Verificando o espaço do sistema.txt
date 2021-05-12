@@ -1,0 +1,48 @@
+// Aula 5 - Verificando o espaço do sistema
+
+$ df
+
+$ df -h
+
+$ df -x tmpfs -x devtmpfs                - imprimir sistemas especificos
+
+$ du /home/igor                todas as pastas do home/igor 
+
+$ du /var
+
+$ du -h /home/mz2
+
+# find / -xdev -user mz2 -print | xargs ls -ldS > /tmp/mz2
+
+# find / -xdev -size +100M | xargs ls -ldS > /tmp/size
+
+# cat /tmp/mz2
+
+# cat /tmp/size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+// Aula 3 - Aumentando os volumes lógicos
+
+# lvextend -L +100M /dev/mapper/lvmteste-musica 
+
+# resize2fs -p /dev/mapper/lvmteste-musica
+
+# df -h /mnt/musica/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

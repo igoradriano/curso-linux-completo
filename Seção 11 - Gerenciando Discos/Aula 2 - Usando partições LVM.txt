@@ -1,0 +1,65 @@
+// Aula 2 - Usando partições LVM
+
+# pvdisplay              volums fisicos
+
+# vgdisplay             grupo de volumes
+
+# lvdisplay             ver os grupos de volumes
+
+# fdisk -c -u /dev/sdb
+
+# vgcreate lvmteste /dev/sdb1
+
+# vgdisplay lvmteste
+
+# lvcreate -n musica -L 100M lvmteste
+
+# ls /dev/mapper/lvmteste*
+
+# mkfs -t ext4 /dev/mapper/lvmteste-musica
+
+# mkdir -p /mnt/musica/
+
+# mount /dev/mapper/lvmteste-musica /mnt/musica/
+
+# df -h /mnt/musica/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

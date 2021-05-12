@@ -1,0 +1,63 @@
+// Aula 1 - Criando partições de disco.txt
+
+# fdisk -l /dev/sda
+
+# fdisk -l                        -- mostra as partições
+
+# umount /dev/sdb1  - para verificar se esta montado
+
+# fdisk -c -u /dev/sdb     -- entrar na particao do fdisk
+n   - adicionar nova particao
+p    - modo primario
+2 - numero de particoes
+
+fdisk -l
+
+mkdir -p /teste
+
+mount /dev/sdb1 /teste/      --montando midia
+
+df -h /teste/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
